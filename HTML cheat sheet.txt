@@ -1,0 +1,24 @@
+<html></html> formats page
+<head></head> tab title
+<div></div> logical container
+<span></span> group text
+<body></body> main text
+<li></li> list
+<ul></ul> unordered list
+<ol></ol> ordered list
+<p></p> paragraph
+<h1> heading one
+<h2> heading two
+<h3> heading three
+<hr> straight horizontal line
+<strong> bold
+<em> emphasis
+<img> images
+<a href> links
+<title> title
+<br> line break
+<table> makes table
+<tr></tr> table row
+<!-- --> comment
+<meta> metadata
+<iframe></iframe> embeds video
