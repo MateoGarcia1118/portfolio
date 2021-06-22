@@ -1,0 +1,14 @@
+body{
+    background: orange;
+    color: darkblue;
+    font-family: "Comic Sans MS";
+}
+h1{
+    color: darkgreen;
+}
+h2{
+    color: darkgreen;
+}
+.center{
+    text-align: center;
+}

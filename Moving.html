@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Game</title>
+  </head>
+  <body>
+    <h1>Press the W, A, S, or D buttons to move!</h1>
+    <script type="text/javascript">
+        // Next, we give JavaScript a function to execute when onkeyup event fires.
+        document.onkeypress = function(event) {
+            var keyPressed = event.key;
+            console.log(keyPressed)
+            if(keyPressed == "w") {
+                alert("You moved fowards!")
+            }
+            if(keyPressed == "a") {
+                alert("You moved to the left!")
+            } 
+            if(keyPressed == "s") {
+                alert("You moved backwards!")
+            }
+            if (keyPressed == "d") {
+                alert("You moved to the right!")
+            }
+        };
+    </script>
+  </body>
+</html>

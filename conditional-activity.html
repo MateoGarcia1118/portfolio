@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Steak Conditional Activity</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var confirmSteak = confirm("Do you like steak?")
+      var confirmTofu = confirm("Do you like tofu?")
+      if (confirmSteak && confirmTofu) {
+        document.write ("Here is both a steak sandwich and a tofu stir fry!")
+      }
+      else if (confirmSteak) {
+        document.write ("Here is a steak sandwich!")
+      }
+      else if (confirmTofu) {
+        document.write ("Here is a tofu stir fry!")
+      }
+      else {
+        document.write ("Go eat something you like then...")
+      }
+    </script>
+  </body>
+</html>

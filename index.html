@@ -2,27 +2,62 @@
     <html lang="en">
         <div>
             <head>
+                <!-- Bootstrap link -->
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+                <link href="css/style1.css" type="text/css" rel="stylesheet">
                 <meta charset="UTF-8">
                 <title>Portfolio</title>
             </head>
         </div>
         <div>
             <body>
-                <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navigation Bar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Homepage<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                <div class="jumbotron">
+                    <h1 class="display-4">We're Awesome!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Placeholder</a>
+                  </div>
+                  <div>
+                    <button> This is a plain button </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-success">This is a better button</button>
+                  </div>
+                <div class="center">
                     <h1>Index</h1>
                 </div>
                 <hr>
-                <div>
+                <div class="center">
                     <a href="about.html">About</a>
                 </div>
-                <div>
+                <div class="center">
                     <a href="gallery.html">My works</a>
                 </div>
                 <hr>
-                <div>
-                    <img src="pack.png" alt="Pack">
+                <div class="center">
+                    <img src="images/pack.png" alt="Pack">
                 </div>
-                <div>
+                <div class="center">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula est nec odio molestie, sed vulputate nibh condimentum. Sed magna massa, tincidunt a libero eget, bibendum hendrerit mi. Maecenas sed bibendum lectus. Integer non varius nibh. Suspendisse eu ligula pulvinar, viverra mauris quis, maximus lorem. Sed risus neque, mollis in cursus a, congue interdum ipsum. Proin malesuada sit amet lectus ac suscipit. Proin ullamcorper neque facilisis quam laoreet, vel malesuada sapien fermentum. Maecenas bibendum, dolor eu tristique pharetra, lorem purus dignissim ipsum, in consectetur est purus vehicula tellus. Sed aliquam eros eget scelerisque faucibus. Proin tempor turpis nec tempor aliquet.</p>
                     <p>Phasellus maximus tortor consectetur quam convallis suscipit. Sed sit amet varius sem. Curabitur ornare tempor ornare. Suspendisse potenti. Integer id dolor interdum, venenatis sapien a, cursus felis. Nullam tincidunt gravida malesuada. Mauris commodo tellus sapien, eu molestie massa viverra eu. Mauris sit amet felis sed nisl tincidunt pretium eu in sapien. Cras imperdiet dui a enim pellentesque semper.</p>
                     <p>Vestibulum hendrerit tempus ligula, at tempor mauris pharetra non. Nullam sed diam nibh. Donec blandit, nibh ac rhoncus aliquet, ex leo laoreet sapien, ac eleifend arcu dolor et nisi. Integer sed vestibulum metus. Etiam a purus a sem auctor malesuada sed ac lorem. Phasellus tincidunt enim tincidunt, blandit tortor sit amet, tincidunt quam. Integer magna felis, dictum sed consequat vel, accumsan sed nisl. Duis auctor hendrerit mi sit amet pellentesque. Integer ut diam sodales, tincidunt augue at, viverra velit. Vivamus a porta nisl, quis gravida ipsum. Nulla sodales commodo metus a dictum. Nullam pharetra ipsum sit amet diam efficitur, non imperdiet augue dignissim.</p>

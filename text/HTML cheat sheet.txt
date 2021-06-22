@@ -22,3 +22,5 @@
 <!-- --> comment
 <meta> metadata
 <iframe></iframe> embeds video
+<style></style> sets up style for CSS
+<input></input> makes typable box
