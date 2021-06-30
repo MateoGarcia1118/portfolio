@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(99, 57, 4);
+}
+.fancy {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 0px;
+    background-color: blue;
+    color: yellowgreen;
+  }

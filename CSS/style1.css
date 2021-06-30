@@ -3,10 +3,7 @@ body{
     color: darkblue;
     font-family: "Comic Sans MS";
 }
-h1{
-    color: darkgreen;
-}
-h2{
+h1, h2, h3, h4, h5{
     color: darkgreen;
 }
 .center{
