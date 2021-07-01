@@ -1,0 +1,11 @@
+git ls - list files
+git pwd - tells your location
+git cd - navigate to specific folder
+git clear - clears terminal
+git status - status of git at location
+git touch - create file
+git init . - initiate git at location
+git add . - adds all files in folder to git
+git commit -m "" - commits files and adds message
+git remote add origin [link] - makes link named origin
+git push origin master - sends local commits to origin and updates master branch

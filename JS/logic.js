@@ -3,6 +3,9 @@ var zCoordinate = 0;
 var xCoordinate = 0;
 var sapling = 0;
 var shovel = 0;
+var coconut = 0;
+let pickedUpCoconut1 = false;
+let pickedUpCoconut2 = false;
 let pickedUpSapling1 = false;
 let pickedUpSapling2 = false;
 let pickedUpShovel = false;
@@ -26,7 +29,7 @@ document.onkeyup = function(event) {
         X.textContent = ("X Coordinates: " + xCoordinate);
     }
     //maximum coordinates +Z
-    else if(keyPressed == "w" && zCoordinate == 101) {
+    if(keyPressed == "w" && zCoordinate == 101) {
         zCoordinate --;
         text.textContent = ("You have reached a beach, and cannot go any farther.");
         Z.textContent = ("Z Coordinates: " + zCoordinate);
@@ -40,7 +43,7 @@ document.onkeyup = function(event) {
         X.textContent = ("X Coordinates: " + xCoordinate);
     }
     //maximum coordinates -X
-    else if (keyPressed == "a" && xCoordinate == -101) {
+    if (keyPressed == "a" && xCoordinate == -101) {
         xCoordinate ++;
         text.textContent = ("You have reached a beach, and cannot go any farther.");
         Z.textContent = ("Z Coordinates: " + zCoordinate);
@@ -54,7 +57,7 @@ document.onkeyup = function(event) {
         X.textContent = ("X Coordinates: " + xCoordinate);
     }
     //maximum coordinates -Z
-    else if (keyPressed == "s" && zCoordinate == -101) {
+    if (keyPressed == "s" && zCoordinate == -101) {
         zCoordinate ++;
         text.textContent = ("You have reached a beach, and cannot go any farther.");
         Z.textContent = ("Z Coordinates: " + zCoordinate);
@@ -67,16 +70,32 @@ document.onkeyup = function(event) {
         Z.textContent = ("Z Coordinates: " + zCoordinate);
         X.textContent = ("X Coordinates: " + xCoordinate);
     }
-    //maximum coordinates +Z
-    else if (keyPressed == "d" && xCoordinate == 101) {
+    //maximum coordinates +X
+    if (keyPressed == "d" && xCoordinate == 101) {
         xCoordinate --;
         text.textContent = ("You have reached a beach, and cannot go any farther.");
         Z.textContent = ("Z Coordinates: " + zCoordinate);
         X.textContent = ("X Coordinates: " + xCoordinate);
     };
+    //coconut, sapling, and shovel inventory
+    if (keyPressed == "i" && coconut > 0 && sapling > 0 && shovel > 0) {
+        alert("Inventory\nCoconuts: " + coconut + "\nSaplings: " + sapling + "\nShovels: " + shovel)
+    }
+    //coconut and sapling inventory
+    else if (keyPressed == "i" && coconut > 0 && sapling > 0) {
+        alert("Inventory\nCoconuts: " + coconut + "\nSaplings: " + sapling);
+    }
+    //coconut and shovel inventory
+    else if (keyPressed == "i" && coconut > 0 && shovel > 0) {
+        alert("Inventory\nCoconuts: " + coconut + "\nShovels: " + shovel);
+    }
     //sapling and shovel inventory
-    if (keyPressed == "i" && sapling > 0 && shovel > 0) {
+    else if (keyPressed == "i" && sapling > 0 && shovel > 0) {
         alert("Inventory\nSaplings: " + sapling + "\nShovels: " + shovel);
+    }
+    //coconut only inventory
+    else if (keyPressed == "i" && coconut > 0) {
+        alert("Inventory\nCoconuts: " + coconut);
     }
     //sapling only inventory
     else if (keyPressed == "i" && sapling > 0) {
@@ -90,10 +109,28 @@ document.onkeyup = function(event) {
     else if (keyPressed == "i") {
         alert("Inventory\nNothing");
     };
+    //picking up coconut1 logic
+    function pickUpCoconut1() {
+        coconut ++;
+        alert("You found a coconut!")
+        pickedUpCoconut1 = true;
+    };
+    function coconutOnce1() {
+        if (!pickedUpCoconut1 && zCoordinate == -11 && xCoordinate == -18) pickUpCoconut1();
+    };
+    //picking up coconut2 logic
+    function pickUpCoconut2() {
+        coconut ++;
+        alert("You found a coconut!");
+        pickedUpCoconut2 = true;
+    };
+    function coconutOnce2() {
+        if (!pickedUpCoconut2 && zCoordinate == -5 && xCoordinate == -30) pickUpCoconut2();
+    };
     //picking up sapling1 logic
     function pickUpSapling1() {
         sapling ++;
-        alert("You found a sapling!")
+        alert("You found a sapling!");
         pickedUpSapling1 = true;
       };
       function saplingOnce1() {
@@ -102,7 +139,7 @@ document.onkeyup = function(event) {
     //picking up sapling2 logic
     function pickUpSapling2() {
         sapling ++;
-        alert("You found a sapling!")
+        alert("You found a sapling!");
         pickedUpSapling2 = true;
     };
     function saplingOnce2() {
@@ -111,13 +148,15 @@ document.onkeyup = function(event) {
     //picking up shovel logic
     function pickUpShovel() {
         shovel ++;
-        alert("You found a shovel!")
+        alert("You found a shovel!");
         pickedUpShovel = true;
     };
     function shovelOnce() {
         if (!pickedUpShovel && zCoordinate == 100 && xCoordinate == 50) pickUpShovel();
     };
     //picking up stuff arrays
+    coconutOnce1();
+    coconutOnce2();
     saplingOnce1(); 
     saplingOnce2(); 
     shovelOnce();
