@@ -1,8 +1,12 @@
 body {
     background-color: rgb(99, 57, 4);
 }
+@font-face {
+    font-family: Papyrus;
+    src: url('/fonts/PAPYRUS.TTF');
+}
 .fancy {
-    font-family: "Papyrus Regular";
+    font-family: Papyrus;
     font-size: 30px;
     margin: 0px;
     background-color: blue;

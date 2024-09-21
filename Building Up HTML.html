@@ -1,80 +1,82 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!---Bootstrap link-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!--My stylesheet-->
-    <link href="CSS/style1.css" type="text/css" rel="stylesheet">
-    <title>More HTML</title>
-  </head>
-  <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navigation Bar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Homepage</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
+  <html>
+    <head>
+      <!---Bootstrap link-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <!--My stylesheet-->
+      <link href="CSS/style1.css" type="text/css" rel="stylesheet">
+      <title>More HTML</title>
+    </head>
+    <body>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navigation Bar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Header and info-->
+      <div class="style1">
+        <h1 class="center">Mateo's World</h1>
+        <h2 class="center">Welcome to my page! This page contains an image of an album by C418, a link test, a list of my favorite musicians and guide on how to make a sandwich.</h2>
+        <!--Centered Picture-->
+        <h3>Album Picture</h3>
+        <p>The picture below this paragraph is the album cover for <i>72 Minutes of Fame</i> by C418. As you will see below, C418 is one of my favorite musicians. This was more or less a test image for placing images in HTML5.</p>
+        <div class="center">
+          <img src="images/72-Minutes-of-Fame.jpg" alt= "72 Minutes of Fame">
+        </div>
+        <h6>Picture by C418</h6>
+        <br>
+        <!--Links-->
+        <h3>Link Test</h3>
+        <p>This is a quick test of linking websites together. If you would like a quick rundown on how links work in HTML5, look at the code for this page for some hints!</p>
+        <ul>
+          <li><a href="http://c418.org">C418's website</a></li>
+          <li><a href="#">This link does nothing</a></li>
+          <li><a target="_blank" href="http://youtube.com">This link opens YouTube on a different tab</a></li>
         </ul>
-      </div>
-    </nav>
-    <!--Header and info-->
-    <h1 class="center">Mateo's World</h1>
-    <h2 class="center">Welcome to my page! This page contains an image of an album by C418, a link test, a list of my favorite musicians and guide on how to make a sandwich.</h2>
-    <!--Centered Picture-->
-    <h3>Album Picture</h3>
-    <p>The picture below this paragraph is the album cover for <i>72 Minutes of Fame</i> by C418. As you will see below, C418 is one of my favorite musicians. This was more or less a test image for placing images in HTML5.</p>
-    <div class="center">
-      <img src="images/72-Minutes-of-Fame.jpg" alt= "72 Minutes of Fame">
-    </div>
-    <h6>Picture by C418</h6>
-    <br>
-    <!--Links-->
-    <h3>Link Test</h3>
-    <p>This is a quick test of linking websites together. If you would like a quick rundown on how links work in HTML5, look at the code for this page for some hints!</p>
-    <ul>
-      <li><a href="http://c418.org">C418's website</a></li>
-      <li><a href="#">This link does nothing</a></li>
-      <li><a target="_blank" href="http://youtube.com">This link opens YouTube on a different tab</a></li>
-    </ul>
-    <!--List of musicians-->
-    <h3>Favorite Musicians</h3>
-    <p>I like to listen to and sometimes make music in my free time. This is a list of my top four favorite musicians and their websites. Click on the links below to learn about and listen to their music!</p>
-    <ol>
-      <li><a href="https://web.archive.org/web/20151119075030/http://tobyfox.net/">Toby "Radiation" Fox</a></li>
-      <li><a href="http://c418.org">Daniel "C418" Rosenfeld</a></li>
-      <li><a href="http://www.lemondemon.com/">Neil "Lemon Demon" Cicierega</a></li>
-      <li><a href="https://www.discogs.com/artist/2025104-Bobby-Prince">Bobby Prince</a></li>
-    </ol>
-    <br>
-    <!--Steps to make a sandwich-->
-    <h3>How to Make a Peanut Butter Sandwich</h3>
-    <p>Peanut butter and jelly sandwiches are my favorite type of sandwich. Personally, I prefer crunchy peanut butter and grape jelly on whole white bread. However, this guide allows you to customize whatever you want in the sandwich.</p>
-    <ol>
-      <li>Gather the tools and ingredients.
+        <!--List of musicians-->
+        <h3>Favorite Musicians</h3>
+        <p>I like to listen to and sometimes make music in my free time. This is a list of my top four favorite musicians and their websites. Click on the links below to learn about and listen to their music!</p>
         <ol>
-          <li>Knife</li>
-          <li>Plate</li>
-          <li>Your choice of bread</li>
-          <li>Your choice of peanut butter</li>
-          <li>Your choice of jelly</li>
+          <li><a href="https://web.archive.org/web/20151119075030/http://tobyfox.net/">Toby "Radiation" Fox</a></li>
+          <li><a href="http://c418.org">Daniel "C418" Rosenfeld</a></li>
+          <li><a href="http://www.lemondemon.com/">Neil "Lemon Demon" Cicierega</a></li>
+          <li><a href="https://www.discogs.com/artist/2025104-Bobby-Prince">Bobby Prince</a></li>
         </ol>
-      </li>
-      <li>Using the knife, spread the peanut butter on one side of one slice of bread.</li>
-      <li>After cleaning the knife, spread the jelly on one side of another slice.</li>
-      <li>Place the peanut buttered side and the jellyed side together.</li>
-      <li>Put the sandwich on the plate.</li>
-      <li>Eat and Enjoy!</li>
-    </ol>
-  </body>
-</html>
+        <br>
+        <!--Steps to make a sandwich-->
+        <h3>How to Make a Peanut Butter Sandwich</h3>
+        <p>Peanut butter and jelly sandwiches are my favorite type of sandwich. Personally, I prefer crunchy peanut butter and grape jelly on whole white bread. However, this guide allows you to customize whatever you want in the sandwich.</p>
+        <ol>
+          <li>Gather the tools and ingredients.
+            <ol>
+              <li>Knife</li>
+              <li>Plate</li>
+              <li>Your choice of bread</li>
+              <li>Your choice of peanut butter</li>
+              <li>Your choice of jelly</li>
+            </ol>
+          </li>
+          <li>Using the knife, spread the peanut butter on one side of one slice of bread.</li>
+          <li>After cleaning the knife, spread the jelly on one side of another slice.</li>
+          <li>Place the peanut buttered side and the jellyed side together.</li>
+          <li>Put the sandwich on the plate.</li>
+          <li>Eat and Enjoy!</li>
+        </ol>
+      </div>
+    </body>
+  </html>
