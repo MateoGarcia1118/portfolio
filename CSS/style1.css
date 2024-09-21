@@ -2,10 +2,15 @@ body{
     background: orange;
     color: darkblue;
     font-family: "Comic Sans MS";
-}
-h1, h2, h3, h4, h5{
+  }
+  h1, h2, h3, h4, h5, h6{
     color: darkgreen;
-}
-.center{
+  }
+  .center{
     text-align: center;
-}
+  }
+  img {
+    width: 250px;
+    border: solid;
+    border-radius: 25px;
+  }
