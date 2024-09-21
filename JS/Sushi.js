@@ -10,7 +10,7 @@ if (confirmSushi) {
 else if (confirmGingerTea) {
     alert("You like ginger tea!!");
 }
-// If neither of the previous condition were true, we run the following block of code.
+// If neither of the previous conditions were true, we run the following block of code.
 else {
     document.write("You don't like sushi or ginger tea.");
 }

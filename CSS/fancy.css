@@ -3,7 +3,7 @@ body {
 }
 @font-face {
     font-family: Papyrus;
-    src: url('/fonts/PAPYRUS.TTF');
+    src: url('../fonts/PAPYRUS.TTF');
 }
 .fancy {
     font-family: Papyrus;
@@ -11,4 +11,4 @@ body {
     margin: 0px;
     background-color: blue;
     color: yellowgreen;
-  }
+}
